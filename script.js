@@ -147,16 +147,48 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Row / Card click (navigates only if not clicking video or link)
+  // Row / Card / Button click: Toggle inline video playback without opening external links
   projectItems.forEach((item) => {
+    const video = item.querySelector('video');
+    const playBtn = item.querySelector('.item-arrow-btn');
+
+    const togglePlayback = () => {
+      if (!video) return;
+      if (video.paused) {
+        // Pause any other playing showcase video first
+        document.querySelectorAll('.item-video-el').forEach((v) => {
+          if (v !== video && !v.paused) v.pause();
+        });
+        video.play().catch(() => {});
+        if (playBtn) playBtn.classList.add('is-playing');
+      } else {
+        video.pause();
+        if (playBtn) playBtn.classList.remove('is-playing');
+      }
+    };
+
+    if (playBtn) {
+      playBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        togglePlayback();
+      });
+    }
+
     item.addEventListener('click', (e) => {
-      if (e.target.closest('video') || e.target.closest('.item-video-box') || e.target.closest('a')) {
+      if (e.target.closest('video') || e.target.closest('a') || e.target.closest('button')) {
         return;
       }
-      const title = item.querySelector('.item-title')?.textContent || 'Project';
-      showToast(`Opening: ${title}`);
-      window.open('https://instagram.com/shameem___rx', '_blank', 'noopener,noreferrer');
+      togglePlayback();
     });
+
+    if (video) {
+      video.addEventListener('play', () => {
+        if (playBtn) playBtn.classList.add('is-playing');
+      });
+      video.addEventListener('pause', () => {
+        if (playBtn) playBtn.classList.remove('is-playing');
+      });
+    }
   });
 
   // Video hover playback preview
