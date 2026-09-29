@@ -1074,6 +1074,293 @@ body {
 }
 
 /* ==========================================================================
+   WEDDING PROJECT VIDEO SECTION
+   ========================================================================== */
+.wedding-showcase-section {
+  padding: 85px 0 95px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  position: relative;
+}
+
+.wedding-header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 32px;
+  margin-bottom: 40px;
+}
+
+.wedding-header-desc {
+  max-width: 520px;
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--text-sub);
+}
+
+.wedding-stage-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 28px;
+  align-items: stretch;
+  margin-bottom: 36px;
+}
+
+/* Left: Main Feature */
+.wedding-main-feature {
+  background: #15221a;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 22px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 18px;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35);
+}
+
+.wedding-main-feature:hover {
+  border-color: rgba(146, 180, 58, 0.4);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.45), 0 0 25px rgba(146, 180, 58, 0.12);
+  transform: translateY(-3px);
+}
+
+.wedding-video-frame {
+  position: relative;
+  width: 100%;
+  height: 380px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #090d0a;
+  border: 1px solid rgba(146, 180, 58, 0.25);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.wedding-feature-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.wedding-video-overlay-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(15, 24, 18, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.3px;
+  z-index: 2;
+}
+
+.wedding-feature-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.wedding-meta-left {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.wedding-pill-tag {
+  background: rgba(146, 180, 58, 0.14);
+  border: 1px solid rgba(146, 180, 58, 0.3);
+  color: var(--color-lime-light);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  align-self: flex-start;
+}
+
+.wedding-feature-title {
+  font-size: 20px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.3px;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.wedding-feature-desc {
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--text-sub);
+  margin: 0;
+}
+
+.btn-wedding-inquire {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--color-lime);
+  color: #121c16;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-size: 12.5px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  box-shadow: 0 4px 18px rgba(146, 180, 58, 0.3);
+  transition: all 0.25s ease;
+}
+
+.btn-wedding-inquire:hover {
+  background: var(--color-lime-light);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(146, 180, 58, 0.45);
+}
+
+/* Right: Secondary Column */
+.wedding-secondary-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.wedding-mini-card {
+  background: #17241d;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 16px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.28);
+}
+
+.wedding-mini-card:hover {
+  background: #1e2e25;
+  border-color: rgba(146, 180, 58, 0.35);
+  transform: translateY(-2px);
+}
+
+.wedding-mini-video-box {
+  width: 150px;
+  height: 110px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  background: #090d0a;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.wedding-mini-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.wedding-mini-badge {
+  position: absolute;
+  bottom: 6px;
+  left: 6px;
+  background: rgba(0, 0, 0, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 9.5px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.wedding-mini-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.wedding-pill-small {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-lime);
+  letter-spacing: 0.5px;
+}
+
+.wedding-mini-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.25;
+}
+
+.wedding-mini-desc {
+  font-size: 12px;
+  line-height: 1.45;
+  color: var(--text-sub);
+  margin: 0;
+}
+
+/* Features Strip */
+.wedding-features-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  background: #131d17;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 18px;
+  padding: 20px 24px;
+}
+
+.w-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.w-feature-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: rgba(146, 180, 58, 0.12);
+  border: 1px solid rgba(146, 180, 58, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.w-feature-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.w-feature-text strong {
+  font-size: 12.5px;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.w-feature-text span {
+  font-size: 11px;
+  color: var(--text-sub);
+}
+
+/* ==========================================================================
    RESULTS ACHIEVED SECTION
    ========================================================================== */
 .results-editorial-section {
@@ -2681,6 +2968,21 @@ body {
     gap: 16px;
   }
 
+  .wedding-header-flex {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .wedding-stage-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .wedding-features-strip {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .results-header-flex {
     flex-direction: column;
     align-items: flex-start;
@@ -3126,6 +3428,84 @@ body {
     font-size: 18px;
   }
 
+  /* Wedding Project Video Section Mobile */
+  .wedding-showcase-section {
+    padding: 50px 0 60px;
+  }
+
+  .wedding-header-flex {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 24px;
+  }
+
+  .wedding-header-desc {
+    font-size: 13.5px;
+  }
+
+  .wedding-stage-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 24px;
+  }
+
+  .wedding-main-feature {
+    padding: 16px;
+    border-radius: 18px;
+    gap: 16px;
+  }
+
+  .wedding-video-frame {
+    height: 220px;
+    border-radius: 12px;
+  }
+
+  .wedding-feature-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .wedding-feature-title {
+    font-size: 18px;
+  }
+
+  .wedding-feature-desc {
+    font-size: 12.5px;
+  }
+
+  .btn-wedding-inquire {
+    width: 100%;
+    justify-content: center;
+    padding: 11px 18px;
+  }
+
+  .wedding-secondary-col {
+    gap: 14px;
+  }
+
+  .wedding-mini-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 14px;
+    border-radius: 16px;
+    gap: 12px;
+  }
+
+  .wedding-mini-video-box {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+  }
+
+  .wedding-features-strip {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 18px 16px;
+    border-radius: 16px;
+  }
+
   /* Results Section */
   .results-editorial-section {
     padding: 50px 0 60px;
@@ -3381,6 +3761,14 @@ body {
 
   .btn-get-in-touch {
     padding: 6px 10px;
+  }
+
+  .wedding-video-frame {
+    height: 180px;
+  }
+
+  .wedding-mini-video-box {
+    height: 140px;
   }
 }
 

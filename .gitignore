@@ -5,3 +5,6 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Large uncompressed video files (>100MB exceeds GitHub limits)
+FAYIZ  AFRA WEDDING HIGHLIGHTS.mp4
