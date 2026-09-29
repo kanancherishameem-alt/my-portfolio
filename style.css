@@ -236,43 +236,6 @@ body {
   font-weight: 700;
 }
 
-/* Header "View Work" Button */
-.btn-header-view-work {
-  display: inline-flex;
-  align-items: center;
-  gap: 7px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  color: #ffffff;
-  padding: 8px 16px;
-  border-radius: 999px;
-  text-decoration: none;
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 0.1px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
-  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.btn-header-view-work:hover {
-  background: rgba(146, 180, 58, 0.15);
-  border-color: var(--color-lime);
-  color: var(--color-lime-light);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(146, 180, 58, 0.25);
-}
-
-.btn-header-vw-arrow {
-  font-size: 13px;
-  font-weight: 700;
-  color: var(--color-lime);
-  transition: transform 0.25s ease;
-}
-
-.btn-header-view-work:hover .btn-header-vw-arrow {
-  transform: translate(2px, -2px);
-}
-
 /* The Exact "Get in touch" Pill Button from Reference */
 .btn-get-in-touch {
   display: inline-flex;
@@ -2810,12 +2773,6 @@ body {
   .view-btn {
     padding: 4px 8px;
     font-size: 10.5px;
-  }
-
-  .btn-header-view-work {
-    padding: 6px 12px;
-    font-size: 11.5px;
-    gap: 4px;
   }
 
   .btn-get-in-touch {
