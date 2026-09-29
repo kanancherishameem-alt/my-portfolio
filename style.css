@@ -2369,13 +2369,13 @@ body {
   margin-bottom: 24px;
 }
 
-/* Direct Contact Channels Grid (WhatsApp & Instagram) */
+/* Direct Contact Channels Grid (WhatsApp, Instagram & LinkedIn) */
 .contact-channels-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   margin-top: 36px;
-  max-width: 900px;
+  max-width: 1050px;
 }
 
 .contact-channel-card {
@@ -2403,6 +2403,11 @@ body {
 .channel-instagram:hover {
   border-color: #e1306c;
   background: #251c24;
+}
+
+.channel-linkedin:hover {
+  border-color: #0a66c2;
+  background: #15222b;
 }
 
 .channel-icon-wrap {
@@ -2436,6 +2441,19 @@ body {
 
 .channel-instagram:hover .icon-ig {
   background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  color: #ffffff;
+  border-color: transparent;
+  transform: scale(1.08);
+}
+
+.icon-li {
+  background: rgba(10, 102, 194, 0.12);
+  color: #0a66c2;
+  border: 1px solid rgba(10, 102, 194, 0.25);
+}
+
+.channel-linkedin:hover .icon-li {
+  background: #0a66c2;
   color: #ffffff;
   border-color: transparent;
   transform: scale(1.08);

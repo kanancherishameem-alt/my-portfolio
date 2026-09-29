@@ -18,4 +18,5 @@
 ## 📬 Contact & Booking
 - **WhatsApp**: [+91 9037745256](https://wa.me/919037745256)
 - **Instagram**: [@shameem___rx](https://instagram.com/shameem___rx)
+- **LinkedIn**: [shameem-k123](https://www.linkedin.com/in/shameem-k123)
 - **Email**: kanancherishameem@gmail.com
