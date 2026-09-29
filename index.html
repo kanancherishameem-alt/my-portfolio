@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="style.css?v=4.1">
+  <link rel="stylesheet" href="style.css?v=4.2">
 </head>
 <body class="site-body">
 
@@ -160,12 +160,33 @@
 
         <div class="about-layout-grid">
           
-          <!-- LEFT COLUMN: Quote Hook & Quick Background Highlights -->
+          <!-- LEFT COLUMN: Portrait Image Card, Highlights Card & Connect -->
           <div class="about-col-left">
-            <h3 class="about-hero-quote">
-              “Turning creative ideas into powerful visual experiences.”
-            </h3>
             
+            <!-- Shameem's On-Location Editorial Portrait Card -->
+            <div class="about-image-card">
+              <div class="about-img-wrap">
+                <img 
+                  src="assets/shameem-about.jpg" 
+                  alt="Shameem — Visual Storyteller & Filmmaker" 
+                  class="about-portrait-img"
+                  loading="lazy"
+                >
+                <div class="about-img-overlay"></div>
+                <div class="about-img-badge">
+                  <span class="about-badge-dot"></span>
+                  <span>Visual Storyteller</span>
+                </div>
+                <div class="about-img-footer">
+                  <div class="about-img-meta">
+                    <span class="about-meta-name">Shameem</span>
+                    <span class="about-meta-role">Editor & Visual Director</span>
+                  </div>
+                  <span class="about-location-pill">📍 Calicut, Kerala</span>
+                </div>
+              </div>
+            </div>
+
             <!-- Quick Background & Credentials Card -->
             <div class="about-highlights-card">
               <div class="highlight-item">
@@ -207,9 +228,13 @@
             </a>
           </div>
 
-          <!-- RIGHT COLUMN: User's Bio Narrative & Mission -->
+          <!-- RIGHT COLUMN: Quote Hook, Narrative & Mission -->
           <div class="about-col-right">
             
+            <h3 class="about-hero-quote">
+              “Turning creative ideas into powerful visual experiences.”
+            </h3>
+
             <!-- Paragraph 1 (Lead) -->
             <p class="about-lead-text">
               I’m Shameem, a video editor, visual storyteller, and AI content creator passionate about turning creative ideas into powerful visual experiences.
@@ -1326,6 +1351,6 @@
   <!-- Toast Notification -->
   <div id="toast" class="toast">Email copied to clipboard!</div>
 
-  <script src="script.js?v=4.1"></script>
+  <script src="script.js?v=4.2"></script>
 </body>
 </html>

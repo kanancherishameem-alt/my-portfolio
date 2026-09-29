@@ -1250,6 +1250,125 @@ body {
   gap: 28px;
 }
 
+/* About Portrait Image Card */
+.about-image-card {
+  position: relative;
+  border-radius: 22px;
+  overflow: hidden;
+  background: #141e17;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.about-image-card:hover {
+  border-color: rgba(146, 180, 58, 0.45);
+  transform: translateY(-4px);
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.55), 0 0 30px rgba(146, 180, 58, 0.15);
+}
+
+.about-img-wrap {
+  position: relative;
+  width: 100%;
+  height: 480px;
+  overflow: hidden;
+}
+
+.about-portrait-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  display: block;
+}
+
+.about-image-card:hover .about-portrait-img {
+  transform: scale(1.03);
+}
+
+.about-img-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(14, 22, 17, 0.92) 0%, rgba(14, 22, 17, 0.25) 45%, transparent 75%);
+  pointer-events: none;
+}
+
+.about-img-badge {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(15, 23, 18, 0.75);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0.3px;
+  z-index: 2;
+}
+
+.about-badge-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--color-lime);
+  box-shadow: 0 0 8px var(--color-lime);
+}
+
+.about-img-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 22px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.about-img-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.about-meta-name {
+  font-family: var(--font-display);
+  font-size: 21px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.3px;
+}
+
+.about-meta-role {
+  font-size: 12px;
+  color: var(--color-lime-light);
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+.about-location-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.85);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+}
+
 .about-hero-quote {
   font-family: var(--font-serif);
   font-size: 32px;
@@ -1257,6 +1376,7 @@ body {
   color: #ffffff;
   font-weight: 500;
   letter-spacing: -0.4px;
+  margin-bottom: 24px;
 }
 
 .about-highlights-card {
@@ -2531,6 +2651,10 @@ body {
   .about-layout-grid {
     grid-template-columns: 1fr;
     gap: 40px;
+  }
+
+  .about-img-wrap {
+    height: 380px;
   }
 
   .projects-header-flex {
