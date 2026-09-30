@@ -1101,132 +1101,70 @@ body {
   color: var(--text-sub);
 }
 
-.wedding-cinema-showcase {
-  max-width: 980px;
-  margin: 0 auto 36px;
-}
-
-.wedding-stage-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 28px;
-  margin-bottom: 36px;
-}
-
-/* Main Feature: Single Grand Cinema Player */
-.wedding-main-feature {
-  background: #15221a;
-  border: 1px solid rgba(255, 255, 255, 0.09);
-  border-radius: 24px;
-  padding: 24px;
+/* Wedding Showcase List Container (Reference Image 1: List Type) */
+.wedding-showcase-list {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 22px;
-  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.4);
-}
-
-.wedding-main-feature:hover {
-  border-color: rgba(146, 180, 58, 0.45);
-  box-shadow: 0 20px 55px rgba(0, 0, 0, 0.5), 0 0 30px rgba(146, 180, 58, 0.12);
-  transform: translateY(-3px);
-}
-
-.wedding-video-frame {
-  position: relative;
   width: 100%;
-  height: 480px;
-  border-radius: 18px;
-  overflow: hidden;
-  background: #090d0a;
-  border: 1px solid rgba(146, 180, 58, 0.25);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+  margin-bottom: 28px;
 }
 
-.wedding-feature-video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.wedding-video-overlay-badge {
-  position: absolute;
-  top: 16px;
-  left: 16px;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: rgba(15, 24, 18, 0.88);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  padding: 6px 14px;
-  border-radius: 999px;
-  font-size: 11.5px;
-  font-weight: 700;
-  color: #ffffff;
-  letter-spacing: 0.3px;
-  z-index: 2;
-}
-
-.wedding-feature-info {
+.wedding-header-right {
   display: flex;
-  justify-content: space-between;
   align-items: flex-end;
   gap: 24px;
 }
 
-.wedding-meta-left {
+/* Wedding CTA Callout Bar (Reference Image 2) */
+.wedding-cta-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  background: #142119;
+  border: 1px solid rgba(146, 180, 58, 0.22);
+  border-radius: 20px;
+  padding: 24px 28px;
+  margin-bottom: 32px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  transition: all 0.3s ease;
+}
+
+.wedding-cta-bar:hover {
+  border-color: rgba(146, 180, 58, 0.45);
+  box-shadow: 0 14px 38px rgba(0, 0, 0, 0.45), 0 0 24px rgba(146, 180, 58, 0.1);
+}
+
+.wedding-cta-text {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 6px;
   flex: 1;
 }
 
-.wedding-tags-row {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.wedding-pill-tag {
-  background: rgba(146, 180, 58, 0.14);
-  border: 1px solid rgba(146, 180, 58, 0.3);
-  color: var(--color-lime-light);
+.wedding-cta-eyebrow {
   font-size: 11px;
-  font-weight: 700;
-  padding: 3px 10px;
-  border-radius: 6px;
+  font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.6px;
-  align-self: flex-start;
+  letter-spacing: 1px;
+  color: var(--color-lime);
 }
 
-.wedding-pill-sub {
-  font-size: 12px;
-  color: var(--text-sub);
-  font-weight: 600;
-  letter-spacing: 0.2px;
-}
-
-.wedding-feature-title {
-  font-size: 24px;
+.wedding-cta-title {
+  font-family: var(--font-sans);
+  font-size: 18px;
   font-weight: 800;
   color: #ffffff;
-  letter-spacing: -0.4px;
   margin: 0;
-  line-height: 1.25;
+  line-height: 1.3;
 }
 
-.wedding-feature-desc {
-  font-size: 14px;
-  line-height: 1.6;
+.wedding-cta-desc {
+  font-size: 13.5px;
   color: var(--text-sub);
   margin: 0;
-  max-width: 680px;
+  line-height: 1.55;
+  max-width: 620px;
 }
 
 .btn-wedding-inquire {
@@ -1249,6 +1187,12 @@ body {
   background: var(--color-lime-light);
   transform: translateY(-2px);
   box-shadow: 0 8px 24px rgba(146, 180, 58, 0.45);
+}
+
+.btn-wedding-inquire-large {
+  padding: 13px 24px;
+  font-size: 13.5px;
+  flex-shrink: 0;
 }
 
 /* Features Strip */
@@ -2909,12 +2853,14 @@ body {
   .wedding-header-flex {
     flex-direction: column;
     align-items: flex-start;
-    gap: 16px;
+    gap: 20px;
   }
 
-  .wedding-stage-grid {
-    grid-template-columns: 1fr;
-    gap: 24px;
+  .wedding-header-right {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    width: 100%;
   }
 
   .wedding-features-strip {
@@ -3371,43 +3317,42 @@ body {
     padding: 50px 0 60px;
   }
 
-  .wedding-cinema-showcase {
-    margin-bottom: 24px;
-  }
-
   .wedding-header-flex {
     flex-direction: column;
     align-items: flex-start;
-    gap: 14px;
+    gap: 16px;
     margin-bottom: 24px;
+  }
+
+  .wedding-header-right {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    width: 100%;
   }
 
   .wedding-header-desc {
     font-size: 13.5px;
   }
 
-  .wedding-main-feature {
-    padding: 16px;
-    border-radius: 18px;
-    gap: 16px;
+  .wedding-showcase-list {
+    margin-bottom: 22px;
   }
 
-  .wedding-video-frame {
-    height: 220px;
-    border-radius: 12px;
-  }
-
-  .wedding-feature-info {
+  .wedding-cta-bar {
     flex-direction: column;
     align-items: flex-start;
-    gap: 14px;
+    gap: 16px;
+    padding: 20px 16px;
+    border-radius: 16px;
+    margin-bottom: 24px;
   }
 
-  .wedding-feature-title {
-    font-size: 19px;
+  .wedding-cta-title {
+    font-size: 16px;
   }
 
-  .wedding-feature-desc {
+  .wedding-cta-desc {
     font-size: 12.5px;
   }
 
@@ -3679,10 +3624,6 @@ body {
 
   .btn-get-in-touch {
     padding: 6px 10px;
-  }
-
-  .wedding-video-frame {
-    height: 180px;
   }
 }
 

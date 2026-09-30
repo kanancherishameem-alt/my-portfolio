@@ -105,11 +105,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 4. Small Projects Filter Tabs & Layout Switcher
   const filterBtns = document.querySelectorAll('.filter-btn');
-  const projectItems = document.querySelectorAll('.project-showcase-item');
-  const layoutToggleBtns = document.querySelectorAll('.layout-toggle-btn');
   const projectsContainer = document.getElementById('projectsContainer');
+  const projectItems = projectsContainer ? projectsContainer.querySelectorAll('.project-showcase-item') : document.querySelectorAll('.project-showcase-item');
+  const layoutToggleBtns = document.querySelectorAll('.layout-toggle-btn');
 
-  // Filter interaction
+  // Filter interaction (Scoped exclusively to #projectsContainer)
   filterBtns.forEach((btn) => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
@@ -147,8 +147,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Row / Card / Button click: Toggle inline video playback without opening external links
-  projectItems.forEach((item) => {
+  // Row / Card / Button click: Toggle inline video playback without opening external links (all showcase items)
+  const allShowcaseItems = document.querySelectorAll('.project-showcase-item');
+  allShowcaseItems.forEach((item) => {
     const video = item.querySelector('video');
     const playBtn = item.querySelector('.item-arrow-btn');
 

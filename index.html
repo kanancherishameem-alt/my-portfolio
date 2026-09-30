@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="style.css?v=4.6">
+  <link rel="stylesheet" href="style.css?v=4.7">
 </head>
 <body class="site-body">
 
@@ -1121,51 +1121,73 @@
             <span class="eyebrow-tag">Nuptial & Event Cinema</span>
             <h2 class="section-heading">Wedding Projects</h2>
           </div>
-          <p class="wedding-header-desc">
-            Capturing timeless bridal emotions, candid rituals, and cinematic celebrations with heartfelt narrative framing, warm natural tones, and premium 4K production.
-          </p>
+          <div class="wedding-header-right">
+            <p class="wedding-header-desc">
+              Capturing timeless bridal emotions, candid rituals, and cinematic celebrations with heartfelt narrative framing, warm natural tones, and premium 4K production.
+            </p>
+            <a href="https://drive.google.com/drive/folders/1bTKBq2k0vgFym6rm11JEcFfly1vw3Wjr?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-wedding-inquire">
+              <span>Inquire for Wedding Work</span>
+              <span class="arrow-icon">↗</span>
+            </a>
+          </div>
         </div>
 
-        <!-- Wedding Showcase Layout: Single Grand Feature for Fayiz & Afra -->
-        <div class="wedding-cinema-showcase">
-          <div class="wedding-main-feature wedding-single-feature">
-            <div class="wedding-video-frame">
-              <video 
-                class="wedding-feature-video"
-                src="fayiz_afra_wedding_highlights.mp4"
-                controls
-                playsinline
-                preload="metadata"
-                loop
-                muted
-              >
-                Your browser does not support HTML5 video.
-              </video>
-              <div class="wedding-video-overlay-badge">
-                <span class="pulse-recording"></span>
-                <span>Featured • Fayiz &amp; Afra Wedding Highlights</span>
-              </div>
-            </div>
-
-            <div class="wedding-feature-info">
-              <div class="wedding-meta-left">
-                <div class="wedding-tags-row">
-                  <span class="wedding-pill-tag">Sacred Union</span>
-                  <span class="wedding-pill-sub">Full Ceremony &amp; Reception Highlights</span>
+        <!-- Wedding Showcase List (Exact List Type as Reference Image 1) -->
+        <div class="wedding-showcase-list layout-list-mode">
+          
+          <!-- Wedding Item 1: Fayiz & Afra -->
+          <article class="project-showcase-item wedding-list-item" data-category="wedding" data-project-id="w1">
+            <div class="item-divider"></div>
+            <div class="item-content-wrap">
+              <div class="item-left-block">
+                <div class="item-circle-num">1</div>
+                <div class="item-meta-titles">
+                  <span class="item-pill-tag">Sacred Union</span>
+                  <h3 class="item-title">FAYIZ &amp; AFRA — WEDDING HIGHLIGHTS</h3>
+                  <p class="item-desc">A complete narrative wedding film capturing sacred nuptial rituals, emotional family connections, traditional stage ceremonies, and joyful celebrations with emotional sound design and movie-grade color grading.</p>
                 </div>
-                <h3 class="wedding-feature-title">FAYIZ &amp; AFRA — WEDDING HIGHLIGHTS</h3>
-                <p class="wedding-feature-desc">
-                  A complete cinematic narrative wedding film capturing sacred nuptial rituals, emotional family connections, traditional stage ceremonies, and joyful celebrations with emotional sound design and movie-grade color grading.
-                </p>
               </div>
-              <div class="wedding-meta-right">
-                <a href="https://wa.me/919037745256?text=Hi%20Shameem,%20I%20am%20interested%20in%20booking%20wedding%20videography%20services." target="_blank" rel="noopener noreferrer" class="btn-wedding-inquire">
-                  <span>Inquire for Wedding</span>
-                  <span class="arrow-icon">↗</span>
-                </a>
+
+              <div class="item-video-box">
+                <video 
+                  class="item-video-el"
+                  src="fayiz_afra_wedding_highlights.mp4"
+                  controls
+                  playsinline
+                  preload="metadata"
+                  loop
+                  muted
+                >
+                  Your browser does not support HTML5 video.
+                </video>
+                <div class="item-video-badge">
+                  <span class="pulse-recording"></span>
+                  <span>Wedding Highlights • 4.5m</span>
+                </div>
+              </div>
+
+              <div class="item-action-col">
+                <button type="button" class="item-arrow-btn is-highlight-green" aria-label="Play Fayiz and Afra Wedding Highlights">
+                  <span>▶</span>
+                </button>
               </div>
             </div>
+            <div class="item-divider"></div>
+          </article>
+
+        </div>
+
+        <!-- Wedding CTA Bar (Reference Image 2: Inquire for Wedding Work with Google Drive link) -->
+        <div class="wedding-cta-bar">
+          <div class="wedding-cta-text">
+            <span class="wedding-cta-eyebrow">Explore Full Wedding Portfolio</span>
+            <h4 class="wedding-cta-title">Looking for Complete Nuptial Coverage &amp; Bespoke Packages?</h4>
+            <p class="wedding-cta-desc">Access our complete archive of wedding films, teasers, and high-resolution deliverables on Google Drive or get in touch for custom bookings.</p>
           </div>
+          <a href="https://drive.google.com/drive/folders/1bTKBq2k0vgFym6rm11JEcFfly1vw3Wjr?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn-wedding-inquire btn-wedding-inquire-large">
+            <span>Inquire for Wedding Work</span>
+            <span class="arrow-icon">↗</span>
+          </a>
         </div>
 
         <!-- Wedding Deliverables & Highlights Banner -->
@@ -1467,6 +1489,6 @@
   <!-- Toast Notification -->
   <div id="toast" class="toast">Email copied to clipboard!</div>
 
-  <script src="script.js?v=4.6"></script>
+  <script src="script.js?v=4.7"></script>
 </body>
 </html>
